@@ -2,7 +2,7 @@
   "name": "east-couchbase",
   "version": "0.1.0",
   "description": "couchbase adapter for east (https://github.com/okv/east)",
-  "main": "index.js",
+  "main": "lib/adapter",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/ramiel/east-couchbase/issues"
   },
-  "homepage": "https://github.com/ramiel/east-couchbase#readme"
+  "homepage": "https://github.com/ramiel/east-couchbase#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "async": "^2.0.0-rc.5",
+    "couchbase": "^2.1.6",
+    "lodash": "^4.13.1"
+  }
 }
