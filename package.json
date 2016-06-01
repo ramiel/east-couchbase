@@ -1,0 +1,25 @@
+{
+  "name": "east-couchbase",
+  "version": "0.1.0",
+  "description": "couchbase adapter for east (https://github.com/okv/east)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramiel/east-couchbase.git"
+  },
+  "keywords": [
+    "east",
+    "couchbase",
+    "adapter",
+    "migration"
+  ],
+  "author": "Fabrizio Ruggeri <fabrizio.ruggeri@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ramiel/east-couchbase/issues"
+  },
+  "homepage": "https://github.com/ramiel/east-couchbase#readme"
+}
