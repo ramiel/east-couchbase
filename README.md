@@ -20,7 +20,7 @@ create `.eastrc` file at current directory
 
 ```js
 {
-    "adapter": "east-mongo",
+    "adapter": "east-couchbase",
     "url": "couchbase://localhost"
 }
 ```
@@ -28,7 +28,7 @@ create `.eastrc` file at current directory
 where `url` is url of database which you want to migrate (in 
 [couchbase url connection format](http://developer.couchbase.com/documentation/server/current/developer-guide/connecting.html))
 
-The information about the migration will be stored in adocument under the key `migration|<migration_name>` (this behavior is configurable)
+The information about the migrations will be stored in a document under the key `migration|<migration_name>` (this behavior is configurable)
 
 ## Options
 
@@ -46,14 +46,14 @@ This adapter takes some advanced options like in this example
 }
 ```
 
-**keyPrefix**: The prefix for the key used for the document on couchbase. Default: `migrations`
-**keySeparator** : the separator used in the key. Default `|`
-**bucket.name**: The name of the bucket. Default `default`
-**bucket.password**: The password for the bucket. Default `null`
+**keyPrefix**: The prefix for the key used for the document on couchbase. Default: `migrations`    
+**keySeparator** : the separator used in the key. Default `|`    
+**bucket.name**: The name of the bucket. Default `default`    
+**bucket.password**: The password for the bucket. Default `null`    
 
 ## Migration template
 
-The default migration template show you plenty of example to use the adapter at its best.
+The default migration template show you plenty of examples to use the adapter at its best.
 If you need just to execute a series of N1ql queries for your migrations you can do as in the example below
 
 ```js
