@@ -1,3 +1,8 @@
+# 0.4.0
+
+- Moved to non-es6 syntax
+- Added minimal test suite
+
 # 0.3.0
 
 - Fixed a bug for the placeholder substitution in the queryExecutor
