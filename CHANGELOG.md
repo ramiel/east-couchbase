@@ -1,3 +1,8 @@
+# 0.4.1
+
+- Adds travis configuration
+- Resolve issue for node 0.12
+
 # 0.4.0
 
 - Moved to non-es6 syntax
