@@ -1,3 +1,7 @@
+# 0.4.2
+
+- More tests
+
 # 0.4.1
 
 - Adds travis configuration
