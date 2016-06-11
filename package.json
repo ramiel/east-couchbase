@@ -1,6 +1,6 @@
 {
   "name": "east-couchbase",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "couchbase adapter for east (https://github.com/okv/east)",
   "main": "lib/adapter",
   "scripts": {
@@ -22,10 +22,14 @@
     "url": "https://github.com/ramiel/east-couchbase/issues"
   },
   "homepage": "https://github.com/ramiel/east-couchbase#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "couchbase": ">2.0.0"
+  },
+  "peerDependencies": {
+    "couchbase": ">2.0.0"
+  },
   "dependencies": {
     "async": "^2.0.0-rc.5",
-    "couchbase": "^2.1.6",
     "lodash": "^4.13.1"
   }
 }
