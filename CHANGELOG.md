@@ -1,3 +1,7 @@
+# Next
+
+- Improved documentation
+
 # 0.4.2
 
 - More tests

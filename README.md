@@ -53,6 +53,13 @@ This adapter takes some advanced options like in this example
 **bucket.name**: The name of the bucket. Default `default`    
 **bucket.password**: The password for the bucket. Default `null`    
 
+## Exposed client
+
+The adapter expose the following properties in the client paramter of your migrations:
+
+- **db** Which is a reference to the [datasource](#datasource)
+- **executionByQueries** A functions to execute N1ql queries easily as explained [here](#migration-template)
+
 ## Migration template
 
 The default migration template show you plenty of examples to use the adapter at its best.
@@ -80,6 +87,13 @@ exports.rollback = function(client, done) {
 
 In this case `$1` will be substituted with the bucket name.
 You can find others options on the default template's comments
+
+## Datasource
+
+The db object exposed in the client is an instance of the connector used internally. It expose the following methods
+
+**getEngine()**: returns the [couchbase driver](http://docs.couchbase.com/sdk-api/couchbase-node-client-2.1.4/) instance    
+**getBucket()**: returns an instance the the [bucket object](http://docs.couchbase.com/sdk-api/couchbase-node-client-2.1.4/Bucket.html) as exposed by the driver    
 
 ## Running test
 
