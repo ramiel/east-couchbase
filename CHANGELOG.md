@@ -1,3 +1,7 @@
+# 0.4.4
+
+- Queries executed in series
+
 # 0.4.3
 
 - Improved documentation
