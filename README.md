@@ -23,7 +23,11 @@ create `.eastrc` file at current directory
 ```js
 {
     "adapter": "east-couchbase",
-    "url": "couchbase://localhost"
+    "url": "couchbase://localhost",
+    "dbauth": {
+        "username": "admin",
+        "password": "password"
+    }
 }
 ```
 
@@ -44,6 +48,10 @@ This adapter takes some advanced options like in this example
     bucket: {
         name: 'default',
         passwor: null
+    },
+    dbauth: {
+        username: "admin",
+        password: "password"
     }
 }
 ```
