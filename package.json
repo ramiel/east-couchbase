@@ -1,6 +1,6 @@
 {
   "name": "east-couchbase",
-  "version": "0.4.4",
+  "version": "0.5.0",
   "description": "couchbase adapter for east (https://github.com/okv/east)",
   "main": "lib/adapter",
   "scripts": {
