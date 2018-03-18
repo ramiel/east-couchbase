@@ -1,3 +1,7 @@
+# 0.5.0
+
+- Support Counchbase aythentication (thanks to [plopezm](https://github.com/plopezm))
+
 # 0.4.4
 
 - Queries executed in series
