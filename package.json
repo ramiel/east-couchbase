@@ -4,7 +4,9 @@
   "description": "couchbase adapter for east (https://github.com/okv/east)",
   "main": "lib/adapter",
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha test",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -32,6 +34,8 @@
   },
   "dependencies": {
     "async": "^2.0.0-rc.5",
-    "lodash": "^4.13.1"
-  }
+    "lodash": "^4.13.1",
+    "snyk": "^1.319.0"
+  },
+  "snyk": true
 }
